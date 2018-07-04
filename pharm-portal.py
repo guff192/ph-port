@@ -1,5 +1,5 @@
 import requests
-med = requests.get("https://api.pharm-portal.ru/api/grls?perPage=500")
+med = requests.get("https://api.pharm-portal.ru/api/grls?perPage=500&page=3")
 #print(str(med.json()))
 json = str(med.json()).encode("ascii", "ignore").decode("ascii")
 print(json)
